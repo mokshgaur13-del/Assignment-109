@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPT-109 Assignment-1 | Anikita</title>
+  <style>
+    :root { --navy:#17345b; --blue:#245a91; --ink:#202938; --muted:#586579; --paper:#ffffff; --bg:#eef2f7; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--ink); background:var(--bg); line-height:1.65; }
+    .page { max-width: 950px; margin: 28px auto; padding: 42px 48px; background:var(--paper); box-shadow:0 8px 28px rgba(20,40,70,.12); }
+    header { text-align:center; border-bottom:3px solid var(--navy); padding-bottom:20px; margin-bottom:26px; }
+    h1 { color:var(--navy); margin:0 0 8px; font-size:30px; }
+    .subtitle { color:var(--muted); margin:0; }
+    .student { display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-top:18px; font-size:14px; }
+    h2 { color:var(--navy); font-size:21px; margin:30px 0 10px; padding-bottom:6px; border-bottom:1px solid #d7e0eb; }
+    h3 { color:var(--blue); font-size:17px; margin:18px 0 7px; }
+    p { margin:8px 0 12px; }
+    ul, ol { padding-left:24px; margin-top:6px; }
+    li { margin:5px 0; }
+    .question { margin:22px 0; break-inside:avoid; }
+    .qtitle { background:#edf3fa; border-left:4px solid var(--blue); padding:10px 14px; color:var(--navy); font-weight:bold; }
+    table { width:100%; border-collapse:collapse; margin:12px 0 18px; font-size:14px; }
+    th, td { border:1px solid #ccd6e2; padding:9px 10px; text-align:left; vertical-align:top; }
+    th { background:#e8eef6; color:var(--navy); }
+    .note { background:#f7f9fc; border:1px solid #dce5ef; padding:12px 15px; border-radius:6px; }
+    footer { border-top:1px solid #d7e0eb; margin-top:35px; padding-top:14px; text-align:center; color:var(--muted); font-size:12px; }
+    @media (max-width:600px) { .page { margin:0; padding:24px 18px; } h1 { font-size:25px; } table { font-size:12px; } th,td { padding:7px; } }
+    @media print { body { background:#fff; } .page { box-shadow:none; margin:0; max-width:none; padding:20px; } .question { break-inside:avoid; } }
+  </style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <h1>BPT-109 Assignment-1</h1>
+    <p class="subtitle">Introduction to Computer and Input &amp; Output Devices</p>
+    <div class="student">
+      <span><strong>Submitted by:</strong> Anikita</span>
+      <span><strong>Submission date:</strong> 13 October 2026</span>
+    </div>
+  </header>
+
+  <section class="question">
+    <div class="qtitle">Question 1: List four primary characteristics of a modern digital computer and identify the key hardware technology associated with each of the five generations of computers.</div>
+    <h3>Four characteristics of a modern digital computer</h3>
+    <ol>
+      <li><strong>Speed:</strong> A computer performs millions or billions of operations per second.</li>
+      <li><strong>Accuracy:</strong> It produces accurate results when the data and instructions supplied are correct.</li>
+      <li><strong>Storage:</strong> It can store large amounts of data and retrieve it quickly when required.</li>
+      <li><strong>Automation and diligence:</strong> Once programmed, it can work automatically and repeat tasks consistently without tiring.</li>
+    </ol>
+    <h3>Five generations of computers</h3>
+    <table>
+      <thead><tr><th>Generation</th><th>Main period (approx.)</th><th>Key hardware technology</th><th>Important features / examples</th></tr></thead>
+      <tbody>
+        <tr><td>First</td><td>1940s–1950s</td><td>Vacuum tubes</td><td>Very large, hot, expensive machines; e.g., ENIAC.</td></tr>
+        <tr><td>Second</td><td>1950s–1960s</td><td>Transistors</td><td>Smaller, faster and more reliable; lower power consumption.</td></tr>
+        <tr><td>Third</td><td>1960s–1970s</td><td>Integrated circuits (ICs)</td><td>Several electronic components placed on a chip; improved reliability.</td></tr>
+        <tr><td>Fourth</td><td>1970s–present</td><td>Microprocessors using VLSI technology</td><td>Personal computers, laptops and compact systems.</td></tr>
+        <tr><td>Fifth</td><td>Present and developing</td><td>ULSI, parallel processing and AI-oriented hardware</td><td>Emphasis on artificial intelligence, natural-language processing and advanced computing.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="question">
+    <div class="qtitle">Question 2: Explain the flow of data, instructions and control signals within the functional block diagram of a computer, detailing the interaction between the CPU, memory unit and I/O interface.</div>
+    <p>A computer system mainly consists of the <strong>input unit, memory unit, central processing unit (CPU), output unit</strong> and the buses that connect them.</p>
+    <ul>
+      <li><strong>Input unit:</strong> Accepts data and instructions through devices such as a keyboard or scanner and converts them into a form the computer can process.</li>
+      <li><strong>Memory unit:</strong> Stores program instructions, input data, intermediate results and final results. RAM holds information currently in use, while secondary storage keeps data for longer periods.</li>
+      <li><strong>CPU:</strong> The Control Unit (CU) fetches and decodes instructions and directs their execution. The Arithmetic Logic Unit (ALU) performs arithmetic and logical operations. Registers hold small amounts of data and instructions for immediate use.</li>
+      <li><strong>I/O interface:</strong> Connects peripheral devices to the system and manages differences in speed, data format and communication methods.</li>
+      <li><strong>Output unit:</strong> Presents processed information through devices such as a monitor, printer or speakers.</li>
+    </ul>
+    <p><strong>Working sequence:</strong> An input device sends data through an I/O interface to memory. The CPU fetches an instruction and required data from memory, decodes the instruction, and processes it. The Control Unit sends control signals to coordinate memory reads/writes and I/O operations. Results are stored in registers or memory and then sent through the output interface when needed.</p>
+    <div class="note"><strong>System buses:</strong> The data bus carries data, the address bus identifies a memory location or I/O device, and the control bus carries signals such as read, write and interrupt.</div>
+  </section>
+
+  <section class="question">
+    <div class="qtitle">Question 3: Demonstrate how optical data-scanning devices (e.g., barcode/OMR scanners) and electronic card readers (e.g., RFID/smart card readers) can be deployed in a campus environment to automate student attendance and library checkouts.</div>
+    <h3>1. Attendance automation</h3>
+    <ol>
+      <li>Each student receives an ID card with a printed barcode or an RFID tag.</li>
+      <li>At the classroom entrance, the student scans the barcode or taps the card on a reader.</li>
+      <li>The reader captures the ID and sends it to the campus attendance application.</li>
+      <li>The application checks the student record, course, class schedule and time, then records attendance in a database.</li>
+      <li>Teachers can review attendance reports and identify students who may need follow-up.</li>
+    </ol>
+    <h3>2. Library checkout automation</h3>
+    <ol>
+      <li>Books are labelled with barcodes or RFID tags, and each student has a library ID card.</li>
+      <li>At the circulation desk or self-service kiosk, the student card and book are scanned or read.</li>
+      <li>The library system verifies the account, checks the book's availability and records the loan and due date.</li>
+      <li>When a book is returned, the system updates its status and calculates any overdue charge according to library rules.</li>
+    </ol>
+    <table>
+      <thead><tr><th>Technology</th><th>How it works</th><th>Campus use</th></tr></thead>
+      <tbody>
+        <tr><td>Barcode scanner</td><td>Reads printed bars using reflected light.</td><td>Student ID and book checkout; usually requires line of sight.</td></tr>
+        <tr><td>OMR (Optical Mark Recognition)</td><td>Detects filled marks on specially designed forms.</td><td>Reading marked attendance sheets, surveys or examination answer sheets.</td></tr>
+        <tr><td>RFID reader</td><td>Reads a radio-frequency tag without direct visual contact.</td><td>Quick attendance and bulk or rapid library item identification, depending on the system.</td></tr>
+        <tr><td>Smart-card reader</td><td>Reads data from a chip card, by contact or contactless interface.</td><td>Student identity verification and access to authorised campus services.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Benefits and safeguards:</strong> These systems reduce manual entry, save time and improve reporting. Access should be limited to authorised staff, data should be protected, and the campus should provide a manual correction process for missed or incorrect scans.</p>
+  </section>
+
+  <section class="question">
+    <div class="qtitle">Question 4: Distinguish between low-level languages (Machine and Assembly) and high-level languages in terms of execution speed, hardware dependence, translation requirements and programming complexity.</div>
+    <table>
+      <thead><tr><th>Basis</th><th>Machine language</th><th>Assembly language</th><th>High-level language</th></tr></thead>
+      <tbody>
+        <tr><td>Form</td><td>Binary instructions (0s and 1s).</td><td>Mnemonic codes such as MOV, ADD and SUB.</td><td>Human-readable statements, e.g., Python, Java or C.</td></tr>
+        <tr><td>Execution speed</td><td>Can be very fast when well suited to the processor.</td><td>Can be very fast and gives detailed control over instructions.</td><td>Depends on the language, compiler/interpreter and implementation; compiled code can be highly efficient.</td></tr>
+        <tr><td>Hardware dependence</td><td>Highly machine-specific.</td><td>Specific to a processor architecture or instruction set.</td><td>Generally more portable across systems with a suitable compiler or runtime.</td></tr>
+        <tr><td>Translation</td><td>Executed directly by the processor.</td><td>Translated by an assembler into machine code.</td><td>Usually translated by a compiler or executed by an interpreter/runtime.</td></tr>
+        <tr><td>Programming complexity</td><td>Very difficult to write, read and debug.</td><td>More readable than machine code, but still detailed and complex.</td><td>Usually easier to learn, maintain and develop with.</td></tr>
+        <tr><td>Typical use</td><td>Processor-level execution.</td><td>Embedded systems, device control and specialised optimisation.</td><td>Web, desktop and mobile applications, data analysis and general software.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Conclusion:</strong> Low-level languages provide close control of hardware but require more effort and processor-specific knowledge. High-level languages improve programmer productivity and portability, though performance depends on the language implementation and the program.</p>
+  </section>
+
+  <section class="question">
+    <div class="qtitle">Question 5: Compare point-and-draw devices (such as a mouse and trackball) with graphics digitizers/drawing tablets, highlighting coordinate tracking mechanisms and pressure sensitivity for CAD and digital art applications.</div>
+    <table>
+      <thead><tr><th>Feature</th><th>Mouse</th><th>Trackball</th><th>Graphics tablet / digitizer</th></tr></thead>
+      <tbody>
+        <tr><td>Tracking mechanism</td><td>Optical sensor tracks movement across a surface.</td><td>Sensor detects rotation of a ball moved by the fingers or palm.</td><td>Digitiser senses a stylus position on a dedicated surface.</td></tr>
+        <tr><td>Coordinate input</td><td>Usually relative movement: the pointer moves according to how far the mouse travels.</td><td>Relative movement; the device stays in one place.</td><td>Often maps a point on the tablet to a corresponding point on the screen (absolute positioning).</td></tr>
+        <tr><td>Pressure sensitivity</td><td>Normally not available for drawing pressure.</td><td>Normally not available for drawing pressure.</td><td>Many pen tablets detect multiple pressure levels; some also detect tilt.</td></tr>
+        <tr><td>Precision</td><td>Good for general selection and interface work.</td><td>Good for precise pointer control in a compact workspace after practice.</td><td>High precision for tracing, drafting and natural pen strokes.</td></tr>
+        <tr><td>Best uses</td><td>General computer use and selecting CAD tools.</td><td>Workstations with limited desk space and specialist control.</td><td>Digital illustration, handwriting, photo retouching and CAD tracing/design.</td></tr>
+      </tbody>
+    </table>
+    <p>For <strong>CAD</strong>, a mouse is useful for menus and general modelling, while a digitizer can help with accurate tracing and specialised design input. For <strong>digital art</strong>, a pressure-sensitive tablet is usually preferable because line width and opacity can respond to pen pressure. The best device depends on the task, software support and the user's comfort.</p>
+  </section>
+
+  <section class="question">
+    <div class="qtitle">Question 6: Assess whether a drum/flatbed plotter or an ultra-high-definition monitor and large-format printer combination is superior for producing civil engineering blueprints, justifying the selection based on line resolution, scalability and long-term production costs.</div>
+    <p>For most modern civil engineering offices, an <strong>ultra-high-definition monitor combined with a large-format printer</strong> is the more practical overall choice. A monitor supports detailed review and editing, while the printer produces physical plans at standard engineering sheet sizes.</p>
+    <table>
+      <thead><tr><th>Criterion</th><th>Drum/flatbed plotter</th><th>UHD monitor + large-format printer</th></tr></thead>
+      <tbody>
+        <tr><td>Line resolution</td><td>Traditional pen plotters can draw precise continuous lines; results depend on pen, mechanics and media.</td><td>A UHD monitor gives detailed on-screen inspection; the printer's DPI and line-rendering capability determine printed detail.</td></tr>
+        <tr><td>Scalability</td><td>Limited by plotter size and the supported media/workflow; some designs require tiling.</td><td>Digital drawings can be zoomed, revised and exported to different sheet sizes; printer capacity still limits physical output width.</td></tr>
+        <tr><td>Speed and flexibility</td><td>Can be slower and less convenient for filled graphics, colour and frequent revisions.</td><td>Supports quick previews, revisions, colour layers and common CAD/PDF workflows.</td></tr>
+        <tr><td>Long-term cost</td><td>May involve specialised maintenance, pens and parts, especially for older equipment.</td><td>Requires printer, ink/toner, paper and maintenance; shared modern equipment can be economical for routine production.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Justification:</strong> The combined digital workflow is generally easier to maintain and integrates well with current CAD software. A large-format printer should be selected for the required sheet sizes, archival media and line quality. A specialised plotter may still be justified where a particular engineering workflow requires its capabilities or where existing equipment is already reliable and cost-effective.</p>
+  </section>
+
+  <section class="question">
+    <div class="qtitle">Question 7: Critique the operational reliability and security vulnerabilities of vision-input devices (facial recognition) compared to voice-recognition devices when deployed as primary biometric authentication tools in high-ambient-noise, publicly exposed environments.</div>
+    <p>Facial recognition and voice recognition can make authentication convenient, but neither is perfectly reliable or secure. In a noisy, public environment, the choice should account for environmental conditions, spoofing risks, privacy and the consequences of a false match.</p>
+    <table>
+      <thead><tr><th>Factor</th><th>Facial recognition</th><th>Voice recognition</th></tr></thead>
+      <tbody>
+        <tr><td>Environmental reliability</td><td>Can be affected by poor lighting, camera angle, masks, occlusion and changes in appearance.</td><td>Ambient noise, reverberation, distance, illness and microphone quality can reduce accuracy; high noise is a major disadvantage.</td></tr>
+        <tr><td>Spoofing risks</td><td>Photos, videos or masks may attack weak systems; depth checks and liveness detection can reduce risk.</td><td>Recordings, replay attacks or synthetic/deepfake voices may attack weak systems; challenge-response and anti-spoofing checks help.</td></tr>
+        <tr><td>Public privacy</td><td>May capture bystanders and can enable unwanted tracking if poorly governed.</td><td>May record bystanders or conversations; voice samples can reveal personal information.</td></tr>
+        <tr><td>Usability</td><td>Can be hands-free and quiet, but needs a suitable camera view.</td><td>Hands-free and useful for accessibility, but speaking a passphrase publicly can be inconvenient and unsafe.</td></tr>
+        <tr><td>Recommended controls</td><td>Liveness detection, secure templates, rate limiting, access logs and a fallback method.</td><td>Noise-resistant microphones, anti-replay checks, secure templates, rate limiting and a fallback method.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Assessment:</strong> In a high-ambient-noise location, voice recognition is generally less operationally reliable because noise can interfere with capturing and matching speech. Facial recognition may perform better if lighting and camera placement are controlled, but it remains vulnerable to spoofing, bias and privacy concerns. Neither should be the sole protection for high-risk access.</p>
+    <p><strong>Recommendation:</strong> Use biometric liveness checks alongside a second factor, such as a secure card or PIN, for sensitive areas. Encrypt biometric templates, limit retention and access, obtain appropriate consent, test performance across user groups, and provide a non-biometric alternative.</p>
+  </section>
+
+  <section class="question">
+    <div class="qtitle">Question 8: Design an accessible, hands-free computer workstation tailored for a visually impaired user. Propose a coherent integration of non-visual input devices (such as voice recognition systems and tactile keyboards) with specialised output devices (such as voice response synthesizers and screen readers).</div>
+    <p>An accessible workstation should let a visually impaired user operate a computer independently using speech, tactile controls and audio feedback. The design should be adjustable to the user's preferences and tasks.</p>
+    <h3>Proposed system components</h3>
+    <ul>
+      <li><strong>Computer and operating system:</strong> Use an operating system with built-in accessibility features and strong support for assistive technology.</li>
+      <li><strong>Screen reader:</strong> Install a screen reader such as NVDA, JAWS or VoiceOver. It reads menus, text, controls, notifications and document content aloud.</li>
+      <li><strong>Speech output:</strong> Use clear text-to-speech with adjustable voice, speed and volume. A good headset or speakers provide private or shared audio as appropriate.</li>
+      <li><strong>Voice recognition:</strong> A microphone and speech-recognition software allow dictation, launching applications, navigating menus and issuing commands. A headset microphone can improve recognition accuracy.</li>
+      <li><strong>Tactile keyboard:</strong> Provide a keyboard with raised home-row markers or high-contrast, large-print key labels. Keyboard shortcuts should be available for frequent actions.</li>
+      <li><strong>Refreshable braille display (optional):</strong> Converts on-screen text into tactile Braille cells and is valuable for users who read Braille or need quiet access.</li>
+      <li><strong>Accessible applications:</strong> Prefer software with labelled controls, keyboard navigation, meaningful headings and compatibility with screen readers.</li>
+      <li><strong>Backup and support:</strong> Include a way to recover from voice-recognition errors, accessible help instructions, automatic saving and regular software updates.</li>
+    </ul>
+    <h3>How the workstation operates</h3>
+    <ol>
+      <li>The user speaks a command or dictates text through the microphone, or enters commands using the tactile keyboard.</li>
+      <li>Speech-recognition software converts speech to commands or text; the operating system sends the action to the relevant application.</li>
+      <li>The screen reader detects changes in the interface and announces labels, focus, text and error messages through speech synthesis.</li>
+      <li>The user listens to the feedback and corrects or confirms the action using speech or keyboard shortcuts. A Braille display can provide tactile output where available.</li>
+    </ol>
+    <h3>Accessibility and safety considerations</h3>
+    <p>Provide adjustable speech rate and volume, support for the user's preferred language, quiet audio options, clear confirmation before destructive actions, and a manual alternative when speech recognition fails. Keep private information out of loudspeaker output in shared spaces, protect voice recordings and personal data, and test the complete workstation with the intended user.</p>
+    <div class="note"><strong>Conclusion:</strong> Combining voice input, tactile keyboard access, a screen reader and optional Braille output creates a flexible workstation that supports hands-free operation without making speech the only way to interact.</div>
+  </section>
+
+  <footer>End of Assignment · BPT-109 · Prepared for Anikita</footer>
+</main>
+</body>
+</html>
